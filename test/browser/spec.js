@@ -1,8 +1,5 @@
-if (typeof window === "undefined")
-	var expect = require("chai").expect,
-		Flow = require("../lib/cflow");
-else
-	var expect = chai.expect;
+var expect = require("chai").expect,
+	Flow = require("../../lib/cflow");
 
 describe("cflow", function () {
 	it("sequential", function (done) {

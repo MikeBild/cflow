@@ -12,7 +12,7 @@
     "node": ">0.8.0"
   },
   "scripts": {
-    "test": "mocha && mocha-phantomjs test/browser/index.html"
+    "test": "mocha test/spec.js && mocha-phantomjs test/browser/index.html"
   },
   "main": "./lib/cflow",
   "author": "Mike Bild",
@@ -46,7 +46,7 @@
     "android-browser/4.2"
     ],
     "harness" : "mocha",
-    "files": "test/*.js"
+    "files": "test/browser/spec.js"
   },
   "keywords": [
     "async",
