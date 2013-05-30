@@ -2,8 +2,8 @@
 !.gitignore
 !.travis.yml
 
+build
 .DS_Store
-
 node_modules
 *.log
 
