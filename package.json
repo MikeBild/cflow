@@ -23,7 +23,7 @@
   },
    "testling": {
     "browsers": ["chrome/25.0"],
-    "files": "test/browser/spec.js"
+    "scripts": "test/browser/spec.js"
   },
   "keywords": [
     "async",
