@@ -13,9 +13,11 @@ describe("cflow", function () {
 				slow("A", this);
 			},
 			function(data){
+				expect(data).to.equal("A");
 				slow2(data + "B", "!!!", this);
 			},
 			function(data, data2){
+				expect(data).to.equal("AB");
 				slow(data + "C" + data2, this);
 			},
 			function(data){

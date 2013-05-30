@@ -12,6 +12,7 @@
   <script type="text/javascript" src="../../lib/cflow.js"></script>
   <script type="text/javascript">
     mocha.setup("bdd");
+    mocha.reporter('html');
     onload = function () {
       (window.mochaPhantomJS ? mochaPhantomJS : mocha).run();
     };
