@@ -1,0 +1,30 @@
+{
+  "name": "qflow",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">0.8.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "./lib/qflow",
+  "author": "Mike Bild",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/MikeBild/qflow.git"
+  },
+  "keywords": [
+    "async",
+    "flow"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/MikeBild/qflow/raw/master/README.md"
+    }
+  ]
+}
