@@ -1,9 +1,7 @@
 var test = require('tape'),
 	Flow = require('../../lib/cflow');
-	
+
 test('cflow sequential', function (t) {
-	t.equal(data, "ABC!!!");
-	t.end();
 	new Flow(
 		function(){
 			slow("A", this);
