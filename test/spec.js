@@ -1,8 +1,8 @@
 if (typeof window === "undefined")
-	var Flow = require("../lib/qflow"),
+	var Flow = require("../lib/cflow"),
 		assert = require("assert");
 
-describe("qflow", function () {
+describe("cflow", function () {
 	it("sequential", function (done) {
 		var results = [];
 		new Flow(

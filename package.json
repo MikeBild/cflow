@@ -1,5 +1,5 @@
 {
-  "name": "qflow",
+  "name": "cflow",
   "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
@@ -11,11 +11,11 @@
   "scripts": {
     "test": "mocha"
   },
-  "main": "./lib/qflow",
+  "main": "./lib/cflow",
   "author": "Mike Bild",
   "repository": {
     "type": "git",
-    "url": "http://github.com/MikeBild/qflow.git"
+    "url": "http://github.com/MikeBild/cflow.git"
   },
   "keywords": [
     "async",
@@ -24,7 +24,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/MikeBild/qflow/raw/master/README.md"
+      "url": "http://github.com/MikeBild/cflow/raw/master/README.md"
     }
   ]
 }

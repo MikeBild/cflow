@@ -1,4 +1,4 @@
-var Flow = require("./lib/qflow");
+var Flow = require("./lib/cflow");
 
  
 new Flow(

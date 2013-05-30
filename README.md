@@ -1,3 +1,3 @@
-# QFlow [![Build Status](https://secure.travis-ci.org/MikeBild/qflow.png?branch=master)](http://travis-ci.org/MikeBild/qflow)
+# CFlow [![Build Status](https://secure.travis-ci.org/MikeBild/cflow.png?branch=master)](http://travis-ci.org/MikeBild/cflow)
 
-> QFlow provides sequential control flow for asynchronous methods simple as possible.
+> CFlow provides sequential control flow for asynchronous methods simple as possible.
