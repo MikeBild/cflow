@@ -5,13 +5,14 @@
   "devDependencies": {
     "mocha": "*",
     "chai": "",
+    "phantomjs": "",
     "mocha-phantomjs": ""
   },
   "engines": {
     "node": ">0.8.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha && mocha-phantomjs test/browser/index.html"
   },
   "main": "./lib/cflow",
   "author": "Mike Bild",
