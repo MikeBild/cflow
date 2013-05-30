@@ -86,7 +86,7 @@
     "android-browser/4.2"
     ],
     "harness" : "mocha",
-    "files": "test/*.js"
+    "scripts": "test/*.js"
   },
   "keywords": [
     "async",
