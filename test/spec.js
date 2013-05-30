@@ -1,7 +1,5 @@
-if (typeof(window) !== "undefined") {
-	var expect = chai.expect;	
-} else {
-	var expect = require("chai").expect,
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+	var chai = require("chai"),
 		Flow = require("../lib/cflow");
 };
 
@@ -12,15 +10,15 @@ describe("cflow", function () {
 				slow("A", this);
 			},
 			function(data){
-				expect(data).to.equal("A");
+				chai.expect(data).to.equal("A");
 				slow2(data + "B", "!!!", this);
 			},
 			function(data, data2){
-				expect(data).to.equal("AB");
+				chai.expect(data).to.equal("AB");
 				slow(data + "C" + data2, this);
 			},
 			function(data){
-				expect(data).to.equal("ABC!!!");
+				chai.expect(data).to.equal("ABC!!!");
 				done();
 			}
 		);
