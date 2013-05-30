@@ -1,7 +1,7 @@
 if (typeof window === "undefined") {
 	var expect = require("chai").expect,
 		Flow = require("../lib/cflow");
-} else if(!chai) {
+} else if(typeof chai === "undefined") {
 	var expect = require("chai").expect;
 } else {
 	var expect = chai.expect;
