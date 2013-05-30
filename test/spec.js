@@ -9,7 +9,6 @@ if (typeof window === "undefined") {
 
 describe("cflow", function () {
 	it("sequential", function (done) {
-		var results = [];
 		new Flow(
 			function(){
 				slow("A", this);
