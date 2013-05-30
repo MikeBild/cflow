@@ -23,6 +23,7 @@
   },
    "testling": {
     "browsers": ["chrome/canary"],
+    "harness": "mocha",
     "files": "test/*.js"
   },
   "keywords": [
