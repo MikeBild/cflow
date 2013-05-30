@@ -22,7 +22,7 @@
     "url": "http://github.com/MikeBild/cflow.git"
   },
    "testling": {
-    "browsers": ["chrome/25.0"],
+    "browsers": ["chrome/27.0"],
     "files": "test/browser/spec.js"
   },
   "keywords": [
