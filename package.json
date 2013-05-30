@@ -23,7 +23,6 @@
   },
    "testling": {
     "browsers": ["chrome/25.0"],
-    "harness" : "mocha",
     "files": "test/browser/spec.js"
   },
   "keywords": [
