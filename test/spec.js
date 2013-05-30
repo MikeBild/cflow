@@ -1,10 +1,8 @@
-if (typeof window === "undefined") {
+if (typeof(window) !== "undefined") {
+	var expect = chai.expect;	
+} else {
 	var expect = require("chai").expect,
 		Flow = require("../lib/cflow");
-} else if(typeof chai === "undefined") {
-	var expect = require("chai").expect;
-} else {
-	var expect = chai.expect;
 };
 
 describe("cflow", function () {
