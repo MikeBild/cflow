@@ -1,6 +1,5 @@
 if (typeof window === "undefined") {
-	var mocha = require("mocha"),
-		expect = require("chai").expect,
+	var expect = require("chai").expect,
 		Flow = require("../lib/cflow");
 } else if(!chai) {
 	var expect = require("chai").expect;
@@ -36,6 +35,7 @@ function slow(value, callback){
 		callback(value);
 	}, 200)
 }
+
 function slow2(value, value2, callback){
 	setTimeout(function(){
 		callback(value, value2);
