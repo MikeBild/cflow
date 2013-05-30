@@ -2,8 +2,12 @@ if (typeof window === "undefined")
 	var mocha = require("mocha"),
 		expect = require("chai").expect,
 		Flow = require("../lib/cflow");
-else
-	var expect = chai.expect;
+else {
+	if(!chai)
+		var expect = require("chai").expect;
+	else
+		var expect = chai.expect;
+}
 
 describe("cflow", function () {
 	it("sequential", function (done) {
