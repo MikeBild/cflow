@@ -1,6 +1,9 @@
 if (typeof window === "undefined")
-	var Flow = require("../lib/cflow"),
-		assert = require("assert");
+	var mocha = require("mocha"),
+		expect = require("chai").expect,
+		Flow = require("../lib/cflow");
+else
+	var expect = chai.expect;
 
 describe("cflow", function () {
 	it("sequential", function (done) {
@@ -16,7 +19,7 @@ describe("cflow", function () {
 				slow(data + "C" + data2, this);
 			},
 			function(data){
-				assert.equal(data, "ABC!!!")
+				expect(data).to.equal("ABC!!!");
 				done();
 			}
 		);
@@ -26,11 +29,11 @@ describe("cflow", function () {
 function slow(value, callback){
 	setTimeout(function(){
 		callback(value);
-	}, 1000)
+	}, 200)
 }
 function slow2(value, value2, callback){
 	setTimeout(function(){
 		callback(value, value2);
-	}, 500)
+	}, 300)
 }
 	

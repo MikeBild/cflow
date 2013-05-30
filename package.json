@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "chai": "",
+    "mocha-phantomjs": ""
   },
   "engines": {
     "node": ">0.8.0"
