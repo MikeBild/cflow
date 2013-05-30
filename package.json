@@ -13,7 +13,7 @@
     "node": ">0.8.0"
   },
   "scripts": {
-    "test": "mocha test/spec.js && mocha-phantomjs test/browser/index.html"
+    "test": "mocha && mocha-phantomjs test/browser/index.html"
   },
   "main": "./lib/cflow",
   "author": "Mike Bild",
@@ -23,7 +23,7 @@
   },
    "testling": {
     "browsers": ["chrome/canary"],
-    "files": "test/browser/spec.js"
+    "files": "test/*.js"
   },
   "keywords": [
     "async",
